@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+
+    	<!-- SETUP BOOTSTAP: link to Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+     <!-- link to Python -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <!-- Add style -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Animation-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body> 
+
+  <div class="row">
+
+    <div class="col-sm-4">
+
+       <h3>Food Ordering</h3>
+
+       <!-- form -->
+  
+      <form>
+        <h5>Menu:</h5>
+        <br>
+          <div>
+           <label for="overloadedsigsand">Overloaded Signature Sandwich</label>
+           <input type="checkbox" id="overloadedsigsand" name="items" value="450.00"> <!--the value is recognized when the checkbox is checked-->
+          </div>
+          <div>
+           <label for="fries">Loaded Fries</label>
+           <input type="checkbox" id="fries" name="items" value="200.00">
+          </div>
+          <div>
+           <label for="macaroni">Baked Macaroni</label>
+           <input type="checkbox" id="macaroni" name="items" value="250.00">
+          </div>
+          <div>
+           <label for="wings">Buffalo Chicken Wings </label>
+           <input type="checkbox" id="wings" name="items" value="300.00">
+          </div>
+          <div>
+           <label for="cokefloat">Coke Float</label>
+           <input type="checkbox" id="cokefloat" name="items" value="80.00">
+          <div>
+           <label for="rootbeerfloat">Root Beer Float</label>
+           <input type="checkbox" id="rootbeerfloat" name="items" value="85.00">
+          </div>
+         
+    
+        <br>
+         <div>
+          <input type="text" id="nameinput" placeholder="Enter your name"> 
+         </div>
+         <div>
+          <input type="text" id="addressinput" placeholder="Enter your address"> 
+         </div>
+         <div>
+          <input type="number" id="numberinput" placeholder="Enter your number"> 
+         </div>
+         <div>
+          <input type="button" value="Create Order" py-click="ordercreate">
+         </div>
+      </form>
+
+      <!--order summary-->
+      
+        <h3>Order Summary:</h3>
+          <p id='ordersummary'>Order for:</p>
+          <p id='addresssummary'>Address:</p>
+          <p id='numbersummary'>Order for:</p>
+          <p id='price'>Total:</p>
+
+    </div>
+  </div>
+
+    <!-- for pyscript-->
+
+    
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
