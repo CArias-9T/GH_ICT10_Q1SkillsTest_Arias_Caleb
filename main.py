@@ -29,7 +29,7 @@ def ordercreate(e):
     if document.getElementById('cokefloat').checked:
         price = price + float(document.getElementById('cokefloat').value)
 
-     if document.getElementById('rootbeerfloat').checked:
+    if document.getElementById('rootbeerfloat').checked:
         price = price + float(document.getElementById('rootbeerfloat').value)
 
     # locations for the order summary, top half ensures no repetition of data
