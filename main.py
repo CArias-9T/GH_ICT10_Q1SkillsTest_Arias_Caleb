@@ -1,4 +1,4 @@
-from pyscript import display 
+from pyscript import display, document
 
 def ordercreate(e):
 
